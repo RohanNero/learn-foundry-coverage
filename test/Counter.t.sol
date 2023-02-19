@@ -23,17 +23,14 @@ contract CounterTest is Test {
     }
 
     /**@notice this function will not catch the bug */
-    function testDecrement_Vulnerable() public {
-        counter.increment(); 
-        counter.decrement();
-        assertEq(counter.number(),0);
-    }
+    // function testDecrement_Vulnerable() public {
+    //     counter.increment(); 
+    //     counter.decrement();
+    //     assertEq(counter.number(),0);
+    // }
 
     /**
-    *@notice this function will catch the bug 
-    *@dev the test logic is still flawed since it asserts the value is one less than the setNumber() input,
-    but decrement() only decrements if `number` >= 0. One possible solution would be to have `decrement()` return a 
-    bool representing if the `number` was actually decremented, and base the `assert` off of that. */ 
+    *@notice this function will catch the bug */ 
     // function testDecrement_OnSteroids(uint256 x) public {
     //     x = bound(x,0,2**256-1);
     //     counter.setNumber(x);
