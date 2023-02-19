@@ -11,4 +11,10 @@ contract Counter {
     function increment() public {
         number++;
     }
+
+    function decrement() public {
+        if(number >= 0) {
+            number--;
+        }       
+    }
 }
