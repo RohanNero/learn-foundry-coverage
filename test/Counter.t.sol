@@ -30,7 +30,7 @@ contract CounterTest is Test {
     // }
 
     /**
-    *@notice this function will catch the bug */ 
+    *@notice this function will catch ze bug */ 
     // function testDecrement_OnSteroids(uint256 x) public {
     //     x = bound(x,0,2**256-1);
     //     counter.setNumber(x);
